@@ -20,12 +20,11 @@ inputSideBar <- function()
 {
   sidebarLayout(
     sidebarPanel(
-      actionButton("do", "Click Me"),
       inputDropDown()
     ),
     mainPanel(
-      plotlyOutput("plot"),
-      plotlyOutput("plot_reacting")
+      plotlyOutput("plot0"),
+      plotlyOutput("plot1")
     )
   )
 }
@@ -33,7 +32,6 @@ inputSideBar <- function()
 shinyUI(
   fluidPage(
     useShinyjs(),
-    #extendShinyjs(text=javascript),
     inputSideBar()
     )
 )

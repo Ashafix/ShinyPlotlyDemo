@@ -1,7 +1,7 @@
 appDir <- "C:/Users/mpeters/Documents/TestObservers"
 
 jsHighLightPoint <- '
-var el = document.getElementsByClassName("js-plotly-plot")[0];
+var el = document.getElementsByClassName("js-plotly-plot")[{plotNo}];
 var highlight_trace = el.data.length -1;
 var newPoint = {x: {x},
                 y: {y}
