@@ -31,7 +31,7 @@ numbersToMessage <- function(numbers)
   }
   else
   {
-    return(paste("You clicked on a point with the following coordinates: x: ", numbers[3], ", y: ", numbers[4], sep=""))
+    return(paste("You clicked on point ", numbers[2], " of trace ", numbers[1], " which has the following coordinates: x: ", numbers[3], ", y: ", numbers[4], sep=""))
   }
 }
 
@@ -47,7 +47,7 @@ definedPlot <- function(values, source)
 
 matchingFile <- function(filename)
 {
-  return(stri_replace_all(filename, "more", fixed="Simple"))
+  return(stri_replace_all(filename, "More", fixed="Simple"))
 }
 
 eventDropDown <- function(input, output, session, values)

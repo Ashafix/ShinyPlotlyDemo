@@ -1,5 +1,4 @@
-appDir <- "C:/Users/mpeters/Documents/TestObservers"
-
+appDir <- "/home/ashafix/github/ShinyPlotlyDemo"
 jsHighLightPoint <- '
 var el = document.getElementsByClassName("js-plotly-plot")[{plotNo}];
 var highlight_trace = el.data.length -1;
